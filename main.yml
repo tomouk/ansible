@@ -1,0 +1,2 @@
+- name: GCP CLI Test
+  command: gcloud compute images list
