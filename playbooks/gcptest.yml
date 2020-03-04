@@ -6,16 +6,11 @@
     - name: List GCP Images
       command: gcloud compute images list
       
-    - name: create a instance
-      gcp_compute_instance:
-        name: test_object
-        machine_type: n1-standard-1
-        disks:
-        - auto_delete: 'true'
-          boot: 'true'
-          source: 'projects/debian-cloud/global/images/debian-9-stretch-v20200210'
-        network_interfaces:
-        - network: 'projects/top-cab-265906/regions/us-central1/subnetworks/default'
-        zone: us-central1-a
-        project: top-cab-265906
-        state: present
+- name: create a service account
+  gcp_iam_service_account:
+    name: test-ansible@top-cab-265906.iam.gserviceaccount.com
+    display_name: My Ansible test key
+    project: top-cab-265906
+    auth_kind: application
+    state: present
+  register: serviceaccount
