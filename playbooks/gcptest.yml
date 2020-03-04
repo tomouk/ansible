@@ -3,8 +3,8 @@
   hosts: localhost
   tasks:
   
-    - name: List GCP Images
-      command: gcloud compute images list
+  #  - name: List GCP Images
+   #   command: gcloud compute images list
       
     - name: create a service account
       gcp_iam_service_account:
