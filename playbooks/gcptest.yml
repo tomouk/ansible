@@ -1,3 +1,4 @@
 ---
 - name: GCP CLI Test
+  hosts: all
   command: gcloud compute images list
