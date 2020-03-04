@@ -9,6 +9,7 @@
     - name: create a service account
       gcp_iam_service_account:
         name: test-ansible@top-cab-265906.iam.gserviceaccount.com
+        auth_kind: application
         display_name: My Ansible test key
         project: top-cab-265906
         state: present
