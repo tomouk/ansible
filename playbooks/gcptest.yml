@@ -1,6 +1,6 @@
 ---
 - name: GCP CLI Test
-  hosts: 192.168.1.181
+  hosts: localhost
   tasks:
   
     #- name: List GCP Images
