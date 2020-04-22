@@ -21,8 +21,7 @@
         mode: up
         bucket: onprem-images
         src: /tmp/test.txt
-        project: top-cab-265906
-
+        
    # - name: Copy file to GCP bucket2
    #   gc_storage:
    #     bucket: onprem-images
