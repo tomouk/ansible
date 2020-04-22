@@ -21,3 +21,4 @@
         action: upload
         bucket: onprem-images
         src: /tmp/test.txt
+        auth_kind: machineaccount
