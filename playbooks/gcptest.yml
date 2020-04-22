@@ -24,13 +24,13 @@
    #     project: top-cab-265906
    #     auth_kind: application
 
-    - name: Copy file to GCP bucket2
-      gc_storage:
-        bucket: onprem-images
-        src: /tmp/test.txt
-        project: top-cab-265906
-        auth_kind: application
-        mode: put
+   # - name: Copy file to GCP bucket2
+   #   gc_storage:
+   #     bucket: onprem-images
+   #     src: /tmp/test.txt
+   #     project: top-cab-265906
+   #     auth_kind: application
+   #     mode: put
     
     - name: Create test bucket
       gc_storage:
