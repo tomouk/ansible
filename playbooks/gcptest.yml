@@ -15,3 +15,9 @@
         project_id: top-cab-265906
      #   credentials_file: '/tmp/key.json'
      #   service_account_email: admin-992@top-cab-265906.iam.gserviceaccount.com
+   
+    - name: Copy file to GCP bucket
+      gc_storage:
+        bucket: onprem-images
+        src: /tmp/test.txt
+        mode: put
