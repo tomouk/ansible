@@ -22,4 +22,3 @@
         bucket: onprem-images
         src: /tmp/test.txt
         project: top-cab-265906
-        auth_kind: serviceaccount
