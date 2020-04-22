@@ -8,7 +8,7 @@
       
     - name: create instance template named foo
       gce_instance_template:
-        name: foo
+        name: foo2
         size: n1-standard-1
         image_family: ubuntu-1604-lts
         state: present
@@ -23,3 +23,16 @@
         src: /tmp/test.txt
         project: top-cab-265906
         auth_kind: application
+
+    - name: Copy file to GCP bucket2
+      gc_storage:
+        bucket: onprem-images
+        src: /tmp/test.txt
+        project: top-cab-265906
+        auth_kind: application
+        mode: put
+    
+    - name: Create test bucket
+      gc_storage:
+        bucket: test
+        mode: create
