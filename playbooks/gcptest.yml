@@ -22,7 +22,7 @@
         bucket: onprem-images
         src: /tmp/test.txt
         project: top-cab-265906
-        auth_kind: serviceaccount
+        auth_kind: machine
 
    # - name: Copy file to GCP bucket2
    #   gc_storage:
