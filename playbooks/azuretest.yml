@@ -1,17 +1,13 @@
 ---
 - name: Azure CLI Test
   hosts: localhost
-  remote_user: root
   tasks:
   
   - name: Create blob & file
     azure_rm_storageblob:
       resource_group: mytestrg01
-      storage_account_name: myteststorageacc01
+      storage_account_name: myteststorageacc04
       container: mytestcontainer03
-      blob: test
-      source: ./files/test
+      blob: testnow
+      source: /tmp/testnow
       public_access: container
-  
-  - name: list VMs
-    command: /usr/bin/az vm list
