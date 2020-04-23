@@ -19,3 +19,4 @@
       blob: test
       src: /tmp/test
       public_access: blob
+      content_type: 'application/image'
