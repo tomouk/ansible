@@ -1,6 +1,6 @@
 ---
 - name: Azure CLI Test
-  hosts: localhost
+  hosts: 192.168.1.245
   tasks:
   
   - name: Create blob & file
