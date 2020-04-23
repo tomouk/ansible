@@ -13,4 +13,4 @@
       public_access: container
   
   - name: list VMs
-    command: az vm list
+    command: /usr/bin/az vm list
