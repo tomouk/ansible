@@ -9,5 +9,5 @@
       storage_account_name: myteststorageacc01
       container: mytestcontainer04
       blob: testnow
-      source: ./tmp/testnow
+      src: /files/test
       public_access: container
