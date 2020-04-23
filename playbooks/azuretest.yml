@@ -12,6 +12,7 @@
       state: present
   
   - name: Upload file to Blob
+    azure_rm_storageblob:
       resource_group: mytestrg01
       storage_account_name: myteststorageacc01
       container: mytestcontainer05
