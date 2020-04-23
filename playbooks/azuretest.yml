@@ -16,7 +16,7 @@
       resource_group: mytestrg01
       storage_account_name: myteststorageacc01
       container: mytestcontainer05
-      blob: test
-      src: /tmp/test
+      blob: test.png
+      src: /tmp/test.png
       public_access: blob
       content_type: 'application/image'
