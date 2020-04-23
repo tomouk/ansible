@@ -1,6 +1,7 @@
 ---
 - name: Azure CLI Test
   hosts: localhost
+  remote_user: root
   tasks:
   
   - name: Create blob & file
