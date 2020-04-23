@@ -2,3 +2,13 @@
 - name: Azure CLI Test
   hosts: localhost
   tasks:
+  
+  - name: Create blob & file
+    azure_rm_storageblob:
+      resource_group: mytestrg01
+      storage_account_name: myteststorageacc01
+      container: mytestcontainer02
+      blob: test.txt
+      src: /tmp/test.txt
+      public_access: container
+      content_type: application/image
