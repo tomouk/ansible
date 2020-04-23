@@ -6,8 +6,8 @@
   - name: Create blob & file
     azure_rm_storageblob:
       resource_group: mytestrg01
-      storage_account_name: myteststorageacc04
-      container: mytestcontainer03
+      storage_account_name: myteststorageacc01
+      container: mytestcontainer04
       blob: testnow
       source: /tmp/testnow
       public_access: container
