@@ -9,5 +9,4 @@
       storage_account_name: myteststorageacc01
       container: mytestcontainer04
       blob: /tmp/test
-      src: /tmp/test
       public_access: container
