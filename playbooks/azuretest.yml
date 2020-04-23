@@ -11,4 +11,4 @@
       blob: test.txt
       src: /tmp/test.txt
       public_access: container
-      content_type: application/image
+    #  content_type: application/image
