@@ -4,11 +4,17 @@
   connection: local
   tasks:
   
-  - name: Create blob & file
+  - name: Create container
     azure_rm_storageblob:
       resource_group: mytestrg01
       storage_account_name: myteststorageacc01
-      container: mytestcontainer04
+      container: mytestcontainer05
+      state: present
+  
+  - name: Upload file to Blob
+      resource_group: mytestrg01
+      storage_account_name: myteststorageacc01
+      container: mytestcontainer05
       blob: test
-      src: '/tmp/test'
-      public_access: container
+      src: /tmp/test
+      public_access: blob
