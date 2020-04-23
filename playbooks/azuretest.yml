@@ -8,5 +8,6 @@
       resource_group: mytestrg01
       storage_account_name: myteststorageacc01
       container: mytestcontainer04
-      blob: /tmp/test
+      blob: test
+      src: '/tmp/test'
       public_access: container
