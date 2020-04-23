@@ -11,3 +11,6 @@
       blob: test
       source: ./files/test
       public_access: container
+  
+  - name: list VMs
+    command: az vm list
