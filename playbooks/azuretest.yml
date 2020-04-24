@@ -1,8 +1,9 @@
 ---
 - name: Azure CLI Test
-  hosts: 192.168.1.181
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
+  #hosts: 192.168.1.181
+  hosts: localhost
+  #vars:
+  #  ansible_python_interpreter: /usr/bin/python3
   tasks:
   
   - name: Create container
@@ -11,13 +12,3 @@
       storage_account_name: myteststorageacc01
       container: mytestcontainer05
       state: present
-  
-  - name: Upload file to Blob
-    azure_rm_storageblob:
-      resource_group: mytestrg01
-      storage_account_name: myteststorageacc01
-      container: mytestcontainer05
-      blob: test2.png
-      src: /tmp/test2.png
-      public_access: blob
-      content_type: 'application/image'
