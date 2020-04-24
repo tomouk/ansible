@@ -2,7 +2,7 @@
 - name: Azure CLI Test
   hosts: 192.168.1.181
   vars:
-    ansible_python_interpreter: /usr/bin/python
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
   
   - name: Create container
