@@ -11,7 +11,7 @@
   tasks:
   
    - debug:
-       msg: tenant is
+       msg: tenant is "{{ tenant }}"
         
  # - name: Create container
  #   azure_rm_storageblob:
