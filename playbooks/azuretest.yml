@@ -13,14 +13,14 @@
    - debug:
        msg: tenant is "{{ tenant }}"
         
-  - name: Create container
-    azure_rm_storageblob:
-      resource_group: mytestrg01
-      storage_account_name: myteststorageacc01
-      container: mytestcontainer06
-      auth_source: auto
-      client_id: "{{ client_id }}"
-      secret: "{{ secret }}"
-      subscription_id: "{{ subscription_id }}"
-      tenant: "{{ tenant }}"
-      state: present
+   - name: Create container
+     azure_rm_storageblob:
+       resource_group: mytestrg01
+       storage_account_name: myteststorageacc01
+       container: mytestcontainer06
+       auth_source: auto
+       client_id: "{{ client_id }}"
+       secret: "{{ secret }}"
+       subscription_id: "{{ subscription_id }}"
+       tenant: "{{ tenant }}"
+       state: present
