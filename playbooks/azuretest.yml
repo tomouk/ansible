@@ -1,6 +1,6 @@
 ---
 - name: Azure CLI Test
-  #hosts: 192.168.1.181
+  hosts: 192.168.1.181
   hosts: localhost
   #vars:
   #  ansible_python_interpreter: /usr/bin/python3
