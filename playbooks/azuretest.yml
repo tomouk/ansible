@@ -10,9 +10,8 @@
     #tenant: "{{ tenant }}"
   tasks:
   
-   - name: DISPLAY THE INJECTED EXTRA VAR
-      debug:
-        var: tenant
+   - debug:
+     msg: tenant is {{ tenant }}
         
  # - name: Create container
  #   azure_rm_storageblob:
