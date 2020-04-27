@@ -4,20 +4,21 @@
   #hosts: localhost
   vars:
     ansible_python_interpreter: /usr/bin/python3
-    client_id: "{{ client_id }}"
-    secret: "{{ secret }}"
-    subscription_id: "{{ subscription_id }}"
-    tenant: "{{ tenant }}"
+    #client_id: "{{  }}"
+    #secret: "{{ secret }}"
+    #subscription_id: "{{ subscription_id }}"
+    #tenant: "{{ tenant }}"
   tasks:
   
   - name: Create container
+    var: client_id
     azure_rm_storageblob:
       resource_group: mytestrg01
       storage_account_name: myteststorageacc01
       container: mytestcontainer06
       auth_source: auto
       client_id: "{{ client_id }}"
-      secret: "{{ secret }}"
-      subscription_id: "{{ subscription_id }}"
-      tenant: "{{ tenant }}"
+     # secret: "{{ secret }}"
+      #subscription_id: "{{ subscription_id }}"
+      #tenant: "{{ tenant }}"
       state: present
