@@ -4,6 +4,10 @@
   #hosts: localhost
   vars:
     ansible_python_interpreter: /usr/bin/python3
+    client_id:
+    secret:
+    subscription_id:
+    tenant:
   tasks:
   
   - name: Create container
@@ -11,4 +15,5 @@
       resource_group: mytestrg01
       storage_account_name: myteststorageacc01
       container: mytestcontainer06
+      auth_source: auto
       state: present
