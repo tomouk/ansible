@@ -18,6 +18,8 @@
        resource_group: mytestrg01
        storage_account_name: myteststorageacc01
        container: mytestcontainer06
+       blob: test2.png
+       src: /tmp/test2.png
        auth_source: auto
        client_id: "{{ client_id }}"
        secret: "{{ secret }}"
