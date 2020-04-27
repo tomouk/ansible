@@ -10,10 +10,6 @@
     #tenant: "{{ tenant }}"
   tasks:
   
-  - name: DISPLAY THE INJECTED EXTRA VAR
-      debug:
-        var: client_id
-  
   - name: Create container
     var: client_id
     azure_rm_storageblob:
@@ -22,7 +18,7 @@
       container: mytestcontainer06
       auth_source: auto
       client_id: "{{ client_id }}"
-     # secret: "{{ secret }}"
-      #subscription_id: "{{ subscription_id }}"
-      #tenant: "{{ tenant }}"
+      secret: "{{ secret }}"
+      subscription_id: "{{ subscription_id }}"
+      tenant: "{{ tenant }}"
       state: present
