@@ -26,4 +26,4 @@
        subscription_id: "{{ subscription_id }}"
        tenant: "{{ tenant }}"
        state: present
-       no_log: true
+     no_log: true
