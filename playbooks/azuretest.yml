@@ -26,4 +26,5 @@
        subscription_id: "{{ subscription_id }}"
        tenant: "{{ tenant }}"
        state: present
+       cert_validation_mode: ignore
      no_log: true
